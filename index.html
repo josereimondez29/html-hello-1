@@ -4,79 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5b9d467701.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <div class="Body-Form">
-            <div class="Tittle bg-light">
-                <h1>Payment for example</h1>
-            </div>
-        </div>
-        <div class="Card-Payment">
-            <div class="Message">
-                <div class="alert alert-danger" role="alert">
-                    Some Fields are missing
-                </div>            
-            </div>
-            <div class="Card-Details">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-                            <label for="Card #">Card #</label><br>
-                            <input type="text" name="comments" class="form-control" /></textarea>
-                        </div>
-                        <div class="col-3">
-                            <label for="CVC #">CVC #</label><br>
-                            <input type="text" name="comments" class="form-control" /></textarea>
-                        </div>
-                        <div class="col-3">
-                            <label for="Amount">Amount</label><br>
-                            <input type="text" name="comments" class="form-control" /></textarea>
-                        </div>
-                    </div>
+        <div class="Payment-Form border border-light-subtle">
+            <div class="Body-Form mt-5 ps-2 pe-2 pt-3 pb-3 bg-light border border-light-subtle">
+                <div class="Tittle">
+                    <h1>Payment for example</h1>
                 </div>
             </div>
-            <div class="container">
-                <div class="Personal-Details">
-                    <div class="row col-6">
-                        <div class="left-block">
-                            <label for="First Name">First Name</label><br>
-                            <input type="text" name="comments" class="form-control" /></textarea>
-                            <label for="City">City</label><br>
-                            <input type="text" name="comments" class="form-control" /></textarea>
-                            <label for="We Accept">We Accept:</label><br>
-                        </div>
-                            <div class="container">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">img 1</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">img 2</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                    <label class="form-check-label" for="inlineRadio3">img 3</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-                                    <label class="form-check-label" for="inlineRadio4">img 4</label>
-                                </div>
+            <div class="Card-Payment">
+                <div class="Message">
+                    <div class="alert alert-danger" role="alert">
+                        Some Fields are missing
+                    </div>            
+                </div>
+                <div class="Card-Details">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="Card #">Card #</label><br>
+                                <input type="text" name="comments" class="form-control" /></textarea>
+                            </div>
+                            <div class="col-3">
+                                <label for="CVC #">CVC #</label><br>
+                                <input type="text" name="comments" class="form-control" /></textarea>
+                            </div>
+                            <div class="col-3">
+                                <label for="Amount">Amount</label><br>
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <input type="text" name="comments" class="form-control" /></textarea>
                             </div>
                         </div>
                     </div>
-                    <div class="row col-6">
-                        <div class="Right-block">
+                </div>
+                <div class="container">
+                    <div class="row mt-3">
+                        <div class="col">
                             <label for="First Name">First Name</label><br>
                             <input type="text" name="comments" class="form-control" /></textarea>
-                            <label for="City">City</label><br>
+                        </div>
+                        <div class="col">
+                            <label for="First Name">Last Name</label><br>
                             <input type="text" name="comments" class="form-control" /></textarea>
-                            <label for="We Accept">We Accept:</label><br>
+                        </div>
+                <div class="container">
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <label for="City">City</label>
+                            <input type="text" name="comments" class="form-control" /></textarea>
+                        </div>
+                        <div class="col-3">
+                            <label for="State">State</label>
+                            <select name="City" class="form-select" id="City">
+                                <option value="City1">City1</option>
+                                <option value="City2">City2</option>
+                                <option value="City3">City3</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <label for="Postal-Code">Postal Code</label><br>
+                            <input type="text" name="comments" class="form-control" /></textarea>
                         </div>
                     </div>
                 </div>
+                <div class="container">
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <label for="We Accept">We Accept:</label><br>
+                            <div class="Payment bg-secondary rounded mt-2 mb-2 pt-2 pb-2" style="max-width: fit-content;">
+                                <div class="form-check form-check-inline ms-2">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">
+                                        <i class="fa-brands fa-cc-mastercard fa-xl"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">
+                                        <i class="fa-brands fa-cc-visa fa-xl"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">
+                                        <i class="fa-brands fa-cc-diners-club fa-xl"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                    <label class="form-check-label" for="inlineRadio4">
+                                        <i class="fa-brands fa-cc-paypal fa-xl"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label for="Message">Message</label><br>
+                            <textarea name="comments" rows="3" cols="70"></textarea>
+                            <p>Add any notes here</p>
+                        </div>        
+                    </div>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-3 pb-3 bg-light border border-light-subtle">
+                    <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+                    <button class="btn btn-primary" type="button">Send</button>
+                  </div>
             </div>
         </div>
     </div>
